@@ -3,14 +3,13 @@ import {Link} from 'react-router-dom';
 import UserPageTemplate from '../templates/UserPageTemplate';
 import Button from '../components/atoms/Button/Button';
 import styled from 'styled-components';
-import Image from '../assets/icons/logo.svg';
 import Heading from '../../src/components/atoms/Heading/Heading';
 import Paragraph from '../../src/components/atoms/Paragraph/Paragraph';
 import PropTypes from 'prop-types';
 import withContext from '../hoc/withContext';
 
 const StyledWrapper = styled.div`
-  padding: 25px 150px 25px 70px;
+  padding: 25px 150px 25px 30px;
   max-width: 50vw;
   position: relative;
   @media (max-width: 1200px) {
@@ -41,23 +40,19 @@ const StyledButton = styled(Button)`
 
 `
 
-const StyledImage = styled.a`
-  
-  width: 90px;
-  height: 60px;
-  border-bottom: 2px solid ${({ theme }) => theme.twitters};
-  background: white url(${Image}) no-repeat;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-`
+
 const StyledLink = styled.a`
 display: block;
 font-weight: ${({theme})=> theme.bold};
-font-size: ${({theme})=> theme.xs};
+font-size: 10px;
 color: black;
 text-transform: uppercase;
-margin: 20px 0 50px;
+margin: 40px 0 30px;
+
+
+@media(min-width: 500px) {
+  font-size: 12px;
+}
 `
 const StyledParagraphTwo = styled(Paragraph)`
   margin-bottom: 30px;
@@ -106,9 +101,7 @@ const DetailsTemplate = ({ pageContext, title, created, content, articleUrl, twi
       </StyledPageHeader>
       <StyledParagraphTwo>{content}</StyledParagraphTwo>
       {pageContext === 'articles' && <StyledLink href={articleUrl}>Otwórz artykuł</StyledLink>}
-      {pageContext === 'twitters' && (
-        <StyledImage alt={title} src={`https://avatars.io/twitter/${twitterName}`} />
-      )}
+      
       <StyledButton as={Link} to={`/${pageContext}`} activecolor={pageContext}>
         Zapisz
       </StyledButton>

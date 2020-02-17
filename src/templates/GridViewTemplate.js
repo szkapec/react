@@ -15,6 +15,7 @@ position: relative;
 `;
 
 const StyledGrid = styled.div`
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 85px;
@@ -30,6 +31,7 @@ const StyledPageHeader = styled.div`
 const StyledHeading = styled(Heading)`
   margin: 25px 0 10px 0;
   font-size: 12px;
+  text-align: center;
   @media(min-width:500px){
     font-size: 16px;
   }
@@ -45,6 +47,7 @@ const StyledHeading = styled(Heading)`
 const StyledParagraph = styled(Paragraph)`
   margin: 0;
   font-size: 10px;
+  text-align: center;
   @media(min-width:500px){
     font-size: 12px;
   }
@@ -56,19 +59,25 @@ const StyledParagraph = styled(Paragraph)`
 
 const StyledButtonIcon = styled(ButtonIcon)`
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 20px;
   background-color: ${({activeColor, theme}) => theme[activeColor] };
   border-radius: 50%;
   background-size: 20%;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
   z-index: 10001;
 
   @media(min-width: 500px) {
     background-size: 20%;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
+  }
+  @media(min-width: 1000px) {
+    height: 70px;
+    width: 70px;
+    bottom: 40px;
+  right: 40px;
   }
 
 `

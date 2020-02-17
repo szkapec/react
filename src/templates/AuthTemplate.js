@@ -28,13 +28,19 @@ const StyledAuthCard = styled.div`
   align-items: center;
   justify-content: center;
 `;
-
+const StyledHeader = styled(Heading)`
+  text-align: center;
+  font-size: 14px;
+  @media(min-width:800px) {
+    font-size: 20px;
+  }
+`
 const AuthTemplate = ({ children }) => (
   <>
   
   <StyledWrapper>
     
-    <Heading>Zaloguj się aby zobaczyć swoje notatki online</Heading>
+    <StyledHeader>Zaloguj się aby zobaczyć swoje notatki online</StyledHeader>
     <StyledAuthCard>{children}</StyledAuthCard>
   </StyledWrapper>
   </>

@@ -14,7 +14,7 @@ import store from '../store/index';
 
 const Root = () => (
   <Provider store={store}>
-  <BrowserRouter>
+  <BrowserRouter basename="/ReactNotes/">
     <MainTemplate>
       <Switch>
           <Route exact path={routes.login} component={LoginPage} />

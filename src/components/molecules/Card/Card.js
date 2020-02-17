@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 import { removeItem as removeItemAction}  from '../../../actions/index';
 
 const StyledWrapper = styled.div`
-  min-height: 380px;
+  min-height: 200px;
   box-shadow: 0 10px 30px -10px hsla(0, 0%, 0%, 0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -22,11 +22,14 @@ const StyledWrapper = styled.div`
 `;
 const StyledParagraph = styled(Paragraph)`
 font-size: 8px;
+line-height: 15px;
+margin-bottom: 10px;
 @media(min-width: 500px){
   font-size: 10px;
 }
 @media(min-width: 700px){
   font-size: 12px;
+  line-height: 20px;
 }
 `;
 const InnerWrapper = styled.div`
@@ -141,13 +144,12 @@ return (
   <StyledWrapper onClick={this.handleCardClick}>
   <InnerWrapper activeColor={cardType}>
     <StyledHeading>{title}</StyledHeading>
-    <DateInfo>{created}</DateInfo>
     {cardType === 'twitters' && <StyledAvatar src={`https://avatars.io/twitter/${twitterName}`} />}
     {cardType === 'articles' && <StyledLinkButton href={articleUrl} />}
   </InnerWrapper>
   <InnerWrapper flex>
     <StyledParagraph>
-      {content} {id}
+      {content} 
     </StyledParagraph>
     <StyledButton onClick={()=>removeItem(cardType,id)} propsik={cardType} secondary>Usuń</StyledButton>
   </InnerWrapper>

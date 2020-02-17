@@ -74,9 +74,11 @@ font-size: 12px;
 `
 const StyledButton = styled(Button)`
   margin-top: 30px;
-  font-size: 8px;
+  font-size: 10px;
+  width: 150px;
     @media(min-width: 700px) {
        font-size: 12px;
+       width: 200px;
 }
 
 `

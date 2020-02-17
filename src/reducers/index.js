@@ -2,36 +2,26 @@ const initialState = {
   twitters: [
     {
       id: 1,
-      title: 'Hello Roman',
+      title: 'Wprowadzenie do hooków',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      created: '1 day',
-      twitterName: 'hello_roman',
+        'Hooki są nowym dodatkiem w Reakcie 16.8. Pozwalają one używać stanu i innych funkcjonalności Reacta, bez użycia klas.',
+      twitterName: 'aaa',
     },
     {
       id: 2,
-      title: 'Redux guy',
+      title: 'React Redux',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      created: '1 day',
+        'Od samego początku musimy podkreślić, że Redux nie ma związku z React. Możesz pisać aplikacje Redux za pomocą React, Angular, Ember, jQuery lub waniliowego JavaScript.',
       twitterName: 'dan_abramov',
     },
     {
       id: 3,
-      title: 'React router stuff',
+      title: 'Styled component w React',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      created: '5 days',
-      twitterName: 'mjackson',
+        'Styled-components jest wynikiem zastanawiania się, w jaki sposób możemy ulepszyć CSS do stylizacji systemów komponentów React. Koncentrując się na pojedynczym przypadku użycia, udało nam się zoptymalizować doświadczenie dla programistów, a także wydajność dla użytkowników końcowych.',
+      twitterName: 'aaa',
     },
-    {
-      id: 4,
-      title: 'Super animacje!',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      created: '10 days',
-      twitterName: 'sarah_edo',
-    },
+    
   ],
   articles: [
     {

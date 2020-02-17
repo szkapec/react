@@ -1,7 +1,7 @@
 export const theme = {
   notes: 'hsl(1, 78%, 43%, 1)',
-  twitters: 'hsl(48, 98%, 50%, 1)',
-  articles: 'hsl(241, 98%, 63%, 1)',
+  twitters: 'hsl(241, 98%, 63%, 1)',
+  articles: 'hsl(48, 98%, 50%, 1)',
   grey100: 'hsl(0, 0%, 96%)',
   grey200: 'hsl(0, 0%, 90%)',
   grey300: 'hsl(0, 0%, 70%)',
