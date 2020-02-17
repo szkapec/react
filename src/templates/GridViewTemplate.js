@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Sidebar from '../components/organisms/Sidebar/Sidebar';
-import Input from '../components/atoms/Input/Input';
 import Heading from '../components/atoms/Heading/Heading';
 import Paragraph from '../components/atoms/Paragraph/Paragraph';
 import withContext from '../hoc/withContext'
@@ -100,15 +99,15 @@ class GridTemplate extends Component {
         <StyledPageHeader>
           
           <StyledHeading as="h1">
-            {pageType=="notes" ? "Dodaj nową notatkę" : null}
-            {pageType=="twitters" ? "Dodaj nowego twitta" : null}
-            {pageType=="articles" ? "Dodaj nowy artykuł" : null}
+            {pageType==="notes" ? "Dodaj nową notatkę" : null}
+            {pageType==="twitters" ? "Dodaj nowego twitta" : null}
+            {pageType==="articles" ? "Dodaj nowy artykuł" : null}
           </StyledHeading>
           <StyledParagraph> 
           dodaj
-          {pageType=="notes" ? " notetkę!" : null}
-          {pageType=="twitters" ? " twitta!" : null}
-          {pageType=="articles" ? " artykuł!" : null}
+          {pageType==="notes" ? " notetkę!" : null}
+          {pageType==="twitters" ? " twitta!" : null}
+          {pageType==="articles" ? " artykuł!" : null}
           
           </StyledParagraph>
         </StyledPageHeader>

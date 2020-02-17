@@ -5,22 +5,15 @@ import Sidebar from '../components/organisms/Sidebar/Sidebar';
 
 
 
-const UserPageTemplate = ({ children, pageType }) => (
+const UserPageTemplate = ({ children }) => (
   <>
-    <Sidebar pageType={pageType} />
-
-     {children}
-      
+    <Sidebar />
+    {children}
   </>
 );
 
 UserPageTemplate.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]),
-  pageType: PropTypes.oneOf(['notes', 'twitters', 'articles']),
-};
-
-UserPageTemplate.defaultProps = {
-  pageType: 'notes',
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]).isRequired,
 };
 
 export default UserPageTemplate;

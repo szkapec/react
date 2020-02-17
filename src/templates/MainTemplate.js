@@ -28,7 +28,6 @@ class MainTemplate extends Component {
       this.setState({
         pageType: currentPage
       })
-      console.log(this.state.pageType)
     }
    
   }
@@ -52,6 +51,8 @@ class MainTemplate extends Component {
   }
   MainTemplate.propTypes = {
     children: PropTypes.element.isRequired,
-  }
-
+    location: PropTypes.shape({
+      pathname: PropTypes.string.isRequired,
+    }).isRequired,
+  };
 export default withRouter(MainTemplate);

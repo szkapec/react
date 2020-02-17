@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../components/molecules/Card/Card';
 import GridTemplate from '../templates/GridViewTemplate';
-
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 const Notes = ({notes}) => (
@@ -18,6 +18,19 @@ const Notes = ({notes}) => (
   </GridTemplate>
 );
 
+Notes.propTypes = {
+  notes: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      created: PropTypes.string.isRequired,
+    }),
+  ),
+};
+Notes.defaultProps = {
+  notes: [],
+};
 const mapStateToProps = state => {
   const { notes } = state;
   console.log(state);

@@ -7,7 +7,7 @@ import withContext from '../../../hoc/withContext';
 import Heading from '../../atoms/Heading/Heading';
 import { connect } from 'react-redux';
 import { addItem as addItemAction} from '../../../actions/index';
-import { Formik, Form, Fields, ErrorMessage } from 'formik';
+import { Formik, Form} from 'formik';
 
 const StyledWrapper = styled.div`
     border-left: 10px solid ${({theme, activeColor})=> theme[activeColor]};
@@ -84,9 +84,9 @@ const StyledButton = styled(Button)`
 const NewItemBar = ({ pageContext, isVisible, addItem, handleClose }) => (
     <StyledWrapper isVisible={isVisible} activecolor={pageContext}>
       <StyledHeading big>Stwórz 
-       {pageContext=="notes" ? " nową notatkę" : null}
-       {pageContext=="articles" ? " nowy artykuł " : null}
-       {pageContext=="twitters" ? " nowy twitt" : null}
+       {pageContext==="notes" ? " nową notatkę" : null}
+       {pageContext==="articles" ? " nowy artykuł " : null}
+       {pageContext==="twitters" ? " nowy twitt" : null}
        
        </StyledHeading>
       <Formik

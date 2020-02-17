@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Image from '../assets/icons/logo.svg';
 import Heading from '../../src/components/atoms/Heading/Heading';
 import Paragraph from '../../src/components/atoms/Paragraph/Paragraph';
+import PropTypes from 'prop-types';
 
 const StyledWrapper = styled.div`
   padding: 25px 150px 25px 70px;
@@ -68,10 +69,26 @@ const DetailsTemplate = ({children, pageType, title, created, content, articleUr
           <Paragraph>{content}</Paragraph>
           {pageType==='articles' && <StyledLink href={articleUrl}>Otwórz artykuł</StyledLink>}
           {pageType==='twitters' && <StyledImage alt={title} src={`http://avatars.io/twitter/${twitterName}`}></StyledImage>}
-          <Link to='/'><StyledButton  pageType={pageType}> Zapisz </StyledButton></Link>
+          <Link to='/'><StyledButton  to={`/${pageType}`}  pageType={pageType}> Zapisz </StyledButton></Link>
       </StyledWrapper>
   </UserPageTemplate>
 );
+DetailsTemplate.propTypes = {
+  pageContext: PropTypes.oneOf(['notes', 'articles', 'twitters']).isRequired,
+  title: PropTypes.string,
+  created: PropTypes.string,
+  content: PropTypes.string,
+  articleUrl: PropTypes.string,
+  twitterName: PropTypes.string,
+};
+
+DetailsTemplate.defaultProps = {
+  title: '',
+  created: '',
+  content: '',
+  articleUrl: '',
+  twitterName: '',
+};
 
 
 export default DetailsTemplate

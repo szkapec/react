@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import DetailsTemplate from '../templates/DetailsTemplate';
-import { routes } from '../Routes/index'
-import styled from 'styled-components';
 
 // const TextNotes = () => {
 //     return (
@@ -58,19 +56,6 @@ class DetailsPage extends Component {
         pageType: 'notes',
     }
 
-    componentDidMount() {
-        switch(this.props.match.path) {
-            case routes.twitter:
-                 this.setState({pageType:'twitters'})
-            break;
-            case routes.note: 
-                this.setState({pageType:'notes'})
-            break;
-            case routes.article: 
-                this.setState({pageType:'articles'})
-                break;
-        }
-    }
 
 
 

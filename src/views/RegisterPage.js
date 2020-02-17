@@ -34,42 +34,45 @@ const StyledLink = styled(Link)`
 `;
 
 const RegisterPage = () => (
-  <AuthTemplate>
-    <Formik
-      initialValues={{ username: '', password: '' }}
-      onSubmit={({ username, password }) => {
-        console.log('hello');
-      }}
-    >
-      {({ handleChange, handleBlur, values }) => (
-        <>
-          <Heading>Zarejestruj się</Heading>
-          <StyledForm>
-            <StyledInput
-              type="text"
-              name="username"
-              placeholder="Login"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.title}
-            />
-            <StyledInput
-              type="password"
-              name="password"
-              placeholder="Hasło"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.title}
-            />
-            <Button activecolor="notes" type="submit">
-              Rejestracja
-            </Button>
-          </StyledForm>
-          <StyledLink to={routes.login}>Zaloguj się!</StyledLink>
-        </>
-      )}
-    </Formik>
-  </AuthTemplate>
+  // <AuthTemplate>
+  //   <Formik
+  //     initialValues={{ username: '', password: '' }}
+  //     onSubmit={({ username, password }) => {
+  //       console.log('hello');
+  //     }}
+  //   >
+  //     {({ handleChange, handleBlur, values }) => (
+  //       <>
+  //         <Heading>Zarejestruj się</Heading>
+  //         <StyledForm>
+  //           <StyledInput
+  //             type="text"
+  //             name="username"
+  //             placeholder="Login"
+  //             onChange={handleChange}
+  //             onBlur={handleBlur}
+  //             value={values.title}
+  //           />
+  //           <StyledInput
+  //             type="password"
+  //             name="password"
+  //             placeholder="Hasło"
+  //             onChange={handleChange}
+  //             onBlur={handleBlur}
+  //             value={values.title}
+  //           />
+  //           <Button activecolor="notes" type="submit">
+  //             Rejestracja
+  //           </Button>
+  //         </StyledForm>
+  //         <StyledLink to={routes.login}>Zaloguj się!</StyledLink>
+  //       </>
+  //     )}
+  //   </Formik>
+  // </AuthTemplate>
+  <>
+
+  </>
 );
 
 export default RegisterPage;

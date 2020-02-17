@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Heading from '../components/atoms/Heading/Heading';
-import logoImg from '../assets/icons/logo.svg'
 const StyledWrapper = styled.div`
 
   position: fixed;
@@ -16,10 +15,6 @@ const StyledWrapper = styled.div`
   justify-content: center;
 `;
 
-const StyledLogo = styled.img`
-  width: 200px;
-  height: auto;
-`;
 
 const StyledAuthCard = styled.div`
   width: 400px;

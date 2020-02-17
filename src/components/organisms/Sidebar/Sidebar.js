@@ -7,7 +7,6 @@ import bulbIcon from '../../../assets/icons/bulb.svg';
 import logoutIcon from '../../../assets/icons/logout.svg';
 import penIcon from '../../../assets/icons/pen.svg';
 import twitterIcon from '../../../assets/icons/twitter.svg';
-import logoIcon from '../../../assets/icons/logo.svg';
 import withContext from '../../../hoc/withContext';
 
 const StyledWrapper = styled.nav`
