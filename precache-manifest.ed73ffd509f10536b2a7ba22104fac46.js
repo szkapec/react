@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/react/static/media/plus.e43ce6c8.svg"
   },
   {
-    "revision": "b9295276507e1a60dbd0e91adf1c4394",
+    "revision": "df7b7fb28ec798c8805ea654b8ad8708",
     "url": "/react/index.html"
   }
 ];
