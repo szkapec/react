@@ -63,8 +63,8 @@ class DetailsPage extends Component {
     render() {
         const dummyArticle = {
             id: 1,
-            title: 'Tytuł ',
-            content: 'lorem lorem content',
+            title: 'Komedia filmowa ',
+            content: 'lorem lorem content lorem lorem content lorem lorem content lorem lorem content lorem lorem content lorem lorem content lorem lorem content',
             twitterName: 'aaa',
             articleUrl: 'http://www.google.pl',
             created: '1day',

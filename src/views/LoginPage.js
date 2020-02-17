@@ -33,41 +33,40 @@ const StyledLink = styled(Link)`
 `;
 
 const LoginPage = ({userID, authenticate}) => (
-  <div>
-  </div>
-  // <AuthTemplate>
-  //   <Formik
+
+  <AuthTemplate>
+    <Formik
      
-  //   >
-  //     {({ handleChange, handleBlur, values }) => {
-  //         if(userID){
-  //             return <Redirect to={routes.home}/>;
-  //         }
-  //         return (
-  //       <>
-  //         <Heading>Zaloguj się</Heading>
-  //         <StyledForm>
-  //           <StyledInput
-  //             type="text"
-  //             name="username"
-  //             placeholder="Login"
+    >
+      {({ handleChange, handleBlur, values }) => {
+          if(userID){
+              return <Redirect to={routes.home}/>;
+          }
+          return (
+        <>
+          <Heading>Zaloguj się</Heading>
+          <StyledForm>
+            <StyledInput
+              type="text"
+              name="username"
+              placeholder="Login"
              
-  //           />
-  //           <StyledInput
-  //             type="password"
-  //             name="password"
-  //             placeholder="Hasło"
+            />
+            <StyledInput
+              type="password"
+              name="password"
+              placeholder="Hasło"
               
-  //           />
-  //           <Button activecolor="notes" type="submit">
-  //             Zaloguj
-  //           </Button>
-  //         </StyledForm>
-  //         <StyledLink to={routes.register}>Zarejestruj się!</StyledLink>
-  //       </>
-  //         )}}
-  //   </Formik>
-  // </AuthTemplate>
+            />
+            <Button activecolor="notes" type="submit">
+              Zaloguj
+            </Button>
+          </StyledForm>
+          <StyledLink to={routes.register}>Zarejestruj się!</StyledLink>
+        </>
+          )}}
+    </Formik>
+  </AuthTemplate>
 );
 
 

@@ -7,6 +7,7 @@ import Image from '../assets/icons/logo.svg';
 import Heading from '../../src/components/atoms/Heading/Heading';
 import Paragraph from '../../src/components/atoms/Paragraph/Paragraph';
 import PropTypes from 'prop-types';
+import withContext from '../hoc/withContext';
 
 const StyledWrapper = styled.div`
   padding: 25px 150px 25px 70px;
@@ -19,12 +20,7 @@ const StyledWrapper = styled.div`
 const StyledPageHeader = styled.div`
   margin: 25px 0 0 0;
 `
-const StyledHeader = styled(Heading)`
-  margin: 25px 0 50px 0;
-  ::first-letter {
-    text-transform: uppercase;
-  }
-`
+
 const StyledParagraph = styled(Paragraph)`
   margin: 0;
   font-weight: ${({theme})=> theme.bold};
@@ -32,10 +28,17 @@ const StyledParagraph = styled(Paragraph)`
 
 
 const StyledButton = styled(Button)`
-      background-color:  ${({  pageType, theme }) => (pageType ? theme[pageType] : 'white')};
+      padding: 10px;
       width: 150px;
-      margin-top: 30px;
       font-size: 10px;
+      text-decoration: none;
+      color: black;
+
+      @media(min-width: 600px) {
+        font-size: 14px;
+        width: 250px;
+      }
+
 `
 
 const StyledImage = styled.a`
@@ -56,23 +59,63 @@ color: black;
 text-transform: uppercase;
 margin: 20px 0 50px;
 `
+const StyledParagraphTwo = styled(Paragraph)`
+  margin-bottom: 30px;
+  font-size: 12px;
+  width: 180px;
+  padding: 15px;
+  box-shadow: 0 10px 30px -10px hsla(0, 0%, 0%, 0.2);
 
-const DetailsTemplate = ({children, pageType, title, created, content, articleUrl, twitterName}) => (
+
+  @media(min-width: 500px){
+    font-size: 14px;
+    width: 250px;
+  }
+  @media(min-width: 600px){
+    font-size: 16px;
+    width: 350px;
+  }
+    @media(min-width: 1000px){
+    font-size: 20px;
+    width: 500px;
+  }
+`
+const StyledHeading = styled(Heading)`
+  margin: 25px 0 50px 0;
+  font-size: 20px;
   
-  <UserPageTemplate pageType={pageType}>
-      <StyledWrapper>
-          <StyledPageHeader>
-              <StyledHeader big as="h1">{title}</StyledHeader>
-          
-          <StyledParagraph>{created}</StyledParagraph>
-          </StyledPageHeader>
-          <Paragraph>{content}</Paragraph>
-          {pageType==='articles' && <StyledLink href={articleUrl}>Otwórz artykuł</StyledLink>}
-          {pageType==='twitters' && <StyledImage alt={title} src={`http://avatars.io/twitter/${twitterName}`}></StyledImage>}
-          <Link to='/'><StyledButton  to={`/${pageType}`}  pageType={pageType}> Zapisz </StyledButton></Link>
-      </StyledWrapper>
+  @media(min-width: 500px){
+    font-size: 22px;
+  }
+  @media(min-width: 600px){
+    font-size: 28px;
+  }
+  ::first-letter {
+    text-transform: uppercase;
+  }
+`
+
+const DetailsTemplate = ({ pageContext, title, created, content, articleUrl, twitterName }) => (
+  <UserPageTemplate>
+    <StyledWrapper>
+      <StyledPageHeader>
+        <StyledHeading big as="h1">
+          {title}
+        </StyledHeading>
+         
+      </StyledPageHeader>
+      <StyledParagraphTwo>{content}</StyledParagraphTwo>
+      {pageContext === 'articles' && <StyledLink href={articleUrl}>Otwórz artykuł</StyledLink>}
+      {pageContext === 'twitters' && (
+        <StyledImage alt={title} src={`https://avatars.io/twitter/${twitterName}`} />
+      )}
+      <StyledButton as={Link} to={`/${pageContext}`} activecolor={pageContext}>
+        Zapisz
+      </StyledButton>
+    </StyledWrapper>
   </UserPageTemplate>
 );
+
 DetailsTemplate.propTypes = {
   pageContext: PropTypes.oneOf(['notes', 'articles', 'twitters']).isRequired,
   title: PropTypes.string,
@@ -90,5 +133,4 @@ DetailsTemplate.defaultProps = {
   twitterName: '',
 };
 
-
-export default DetailsTemplate
+export default withContext(DetailsTemplate);
