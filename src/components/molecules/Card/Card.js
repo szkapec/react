@@ -21,14 +21,14 @@ const StyledWrapper = styled.div`
 
 `;
 const StyledParagraph = styled(Paragraph)`
-font-size: 8px;
+font-size: 12px;
 line-height: 15px;
 margin-bottom: 10px;
 @media(min-width: 500px){
-  font-size: 10px;
+  font-size: 14px;
 }
 @media(min-width: 700px){
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
 }
 `;
@@ -50,21 +50,14 @@ const InnerWrapper = styled.div`
     `}
 `;
 
-const DateInfo = styled(Paragraph)`
-  margin: 0 0 5px;
-  font-weight: ${({ theme }) => theme.bold};
-  font-size: ${({ theme }) => theme.fontSize.xs};
-  @media(max-width: 1000px) {
-    font-size: 6px;
-  }
-`;
+
 
 const StyledHeading = styled(Heading)`
   margin: 5px 0 0;
   font-size: 10px;
 
   @media(min-width: 500px){
-    font-size: 12px;
+    font-size: 14px;
   }
 
 
@@ -77,8 +70,8 @@ const StyledAvatar = styled.img`
   border: 5px solid ${({ theme }) => theme.twitters};
   border-radius: 50px;
   position: absolute;
-  right: 25px;
-  top: 25px;
+  right: 10px;
+  top: 10px;
   @media(min-width: 500px) {
     width: 35px;
   height: 35px;
@@ -112,11 +105,11 @@ const StyledLinkButton = styled.a`
 `;
 const StyledButton = styled(Button)`
   background-color:  ${({ propsik, theme }) => (propsik ? theme[propsik] : 'white')};
-  width: 50px;
-  font-size: 8px;
+  width: 70px;
+  font-size: 10px;
 
   @media(min-width: 1000px){
-    width: 80px;
+    width: 90px;
   font-size: 12px;
   }
 `;

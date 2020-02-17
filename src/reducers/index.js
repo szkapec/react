@@ -26,66 +26,57 @@ const initialState = {
   articles: [
     {
       id: 1,
-      title: 'React on my mind',
+      title: 'React artykuł',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      articleUrl: 'https://youtube.com/helloroman',
+        'Nasz duży zespół inżynierów korzysta z tego przewodnika rozwoju',
+      articleUrl: 'https://www.freecodecamp.org/news/grabs-front-end-guide-for-large-teams-484d4033cc41/',
       created: '1 day',
     },
     {
       id: 2,
-      title: 'Wish you React',
+      title: 'Czysty kod w React',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
+        'Jak napisać bardzo czytelny kod React - 10 wskazówek dotyczących stylu kodowania',
       articleUrl: 'https://youtube.com/helloroman',
-      created: '1 day',
     },
     {
       id: 3,
       title: 'You gave React a bad name',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      articleUrl: 'https://youtube.com/helloroman',
-      created: '5 days',
+      articleUrl: 'https://www.freecodecamp.org/news/10-points-to-remember-thatll-help-you-master-coding-in-reactjs-library-d0520d8c73d8/',
     },
     {
       id: 4,
-      title: 'Is it React you looking for?',
+      title: 'Kurs Reacta - udemy',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      articleUrl: 'https://youtube.com/helloroman',
+        'React 16 - Kompletny przewodnik (w tym React Router 4 i Redux)',
+      articleUrl: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-Q3q.KljcfruAzgZwaqyUjw',
+      created: '10 days',
+    },
+    {
+      id: 5,
+      title: 'Kompletny kurs React Native i Redux',
+      content:
+        'Tworzenie aplikacji na iOS i Androida od zera - buduj pełne aplikacje mobilne React Native bardzo szybko!',
+      articleUrl: 'https://www.udemy.com/course/the-complete-react-native-and-redux-course/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-8suJ_4d.g3Q1mcWkI6wKCA',
       created: '10 days',
     },
   ],
   notes: [
     {
       id: 1,
-      title: 'Wake me up when Vue ends',
+      title: 'Zapraszam do dodawania notatek!',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      created: '1 day',
+        'Każdy może dodać notatkę przycisk "+" prawy dolny róg. Zapraszam! ',
     },
     {
       id: 2,
-      title: 'Como es An Gular?',
+      title: 'Zakupy',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      created: '1 day',
+        'Kupić: 1. Banany 2. Pomarańcze 3.Cytryny 4.Cebula 5. Kiwi',
     },
-    {
-      id: 3,
-      title: 'Du bist Reactish',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      created: '5 days',
-    },
-    {
-      id: 4,
-      title: 'Reactuj się kto moze!',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      created: '10 days',
-    },
+    
   ],
 };
 
