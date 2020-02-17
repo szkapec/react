@@ -1,5 +1,5 @@
 {
-  "homepage": "https://szkapec.github.io/ReactNotes/",
+  "homepage": "https://szkapec.github.io/react/",
   "name": "002",
   "version": "0.1.0",
   "private": true,
@@ -45,13 +45,6 @@
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
     "storybook-react-router": "^1.0.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": []
   }
+
 }

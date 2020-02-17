@@ -1,0 +1,18 @@
+{
+  "main.js": "/react/static/js/main.16b654bb.chunk.js",
+  "main.js.map": "/react/static/js/main.16b654bb.chunk.js.map",
+  "runtime~main.js": "/react/static/js/runtime~main.bb50a20d.js",
+  "runtime~main.js.map": "/react/static/js/runtime~main.bb50a20d.js.map",
+  "static/js/2.f693184a.chunk.js": "/react/static/js/2.f693184a.chunk.js",
+  "static/js/2.f693184a.chunk.js.map": "/react/static/js/2.f693184a.chunk.js.map",
+  "index.html": "/react/index.html",
+  "precache-manifest.6ec52d3f2308669a9f3bb247d7807a76.js": "/react/precache-manifest.6ec52d3f2308669a9f3bb247d7807a76.js",
+  "service-worker.js": "/react/service-worker.js",
+  "static/media/bulb.svg": "/react/static/media/bulb.af737b55.svg",
+  "static/media/link.svg": "/react/static/media/link.6fc1d8fe.svg",
+  "static/media/logout.svg": "/react/static/media/logout.0969c92b.svg",
+  "static/media/magnifier.svg": "/react/static/media/magnifier.a14461b8.svg",
+  "static/media/pen.svg": "/react/static/media/pen.84b70f8a.svg",
+  "static/media/plus.svg": "/react/static/media/plus.e43ce6c8.svg",
+  "static/media/twitter.svg": "/react/static/media/twitter.051af8ba.svg"
+}
