@@ -14,11 +14,9 @@ import store from '../store/index';
 
 const Root = () => (
   <Provider store={store}>
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename="react">
     <MainTemplate>
       <Switch>
-          <Route exact path={routes.login} component={LoginPage} />
-          <Route exact path={routes.register} component={RegisterPage} />
           <Route exact path={routes.home} render={() => <Redirect to="/notes" />} />
           <Route exact path={routes.notes} component={Notes} />
           <Route path={routes.note} component={DetailsPage} />
