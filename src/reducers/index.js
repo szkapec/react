@@ -5,21 +5,24 @@ const initialState = {
       title: 'Wprowadzenie do hooków',
       content:
         'Hooki są nowym dodatkiem w Reakcie 16.8. Pozwalają one używać stanu i innych funkcjonalności Reacta, bez użycia klas.',
-      twitterName: 'aaa',
+        created: '1 day',
+        twitterName: 'aaa',
     },
     {
       id: 2,
       title: 'React Redux',
       content:
         'Od samego początku musimy podkreślić, że Redux nie ma związku z React. Możesz pisać aplikacje Redux za pomocą React, Angular, Ember, jQuery lub waniliowego JavaScript.',
-      twitterName: 'dan_abramov',
+        created: '1 day',
+        twitterName: 'dan_abramov',
     },
     {
       id: 3,
       title: 'Styled component w React',
       content:
         'Styled-components jest wynikiem zastanawiania się, w jaki sposób możemy ulepszyć CSS do stylizacji systemów komponentów React. Koncentrując się na pojedynczym przypadku użycia, udało nam się zoptymalizować doświadczenie dla programistów, a także wydajność dla użytkowników końcowych.',
-      twitterName: 'aaa',
+        created: '1 day',
+        twitterName: 'aaa',
     },
     
   ],
@@ -37,14 +40,16 @@ const initialState = {
       title: 'Czysty kod w React',
       content:
         'Jak napisać bardzo czytelny kod React - 10 wskazówek dotyczących stylu kodowania',
-      articleUrl: 'https://youtube.com/helloroman',
+        created: '1 day',
+        articleUrl: 'https://youtube.com/helloroman',
     },
     {
       id: 3,
       title: 'You gave React a bad name',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
-      articleUrl: 'https://www.freecodecamp.org/news/10-points-to-remember-thatll-help-you-master-coding-in-reactjs-library-d0520d8c73d8/',
+        created: '1 day',
+        articleUrl: 'https://www.freecodecamp.org/news/10-points-to-remember-thatll-help-you-master-coding-in-reactjs-library-d0520d8c73d8/',
     },
     {
       id: 4,
@@ -67,12 +72,14 @@ const initialState = {
     {
       id: 1,
       title: 'Zapraszam do dodawania notatek!',
+      created: '1 day',
       content:
         'Każdy może dodać notatkę przycisk "+" prawy dolny róg. Zapraszam! ',
     },
     {
       id: 2,
       title: 'Zakupy',
+      created: '1 day',
       content:
         'Kupić: 1. Banany 2. Pomarańcze 3.Cytryny 4.Cebula 5. Kiwi',
     },
